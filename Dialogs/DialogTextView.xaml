@@ -2,8 +2,13 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              Height="250" Width="300">
-    <Grid Background="White">
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+    <Grid>
+        <Rectangle Fill="White" 
+                   RadiusX="3" 
+                   RadiusY="3"/>
+        
+        <StackPanel HorizontalAlignment="Center" 
+                    VerticalAlignment="Center">
             <TextBlock Text="Text input" 
                        FontSize="17" 
                        Margin="10"/>
