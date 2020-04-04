@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="DialogHost.DialogView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="200" Width="300">
+    <Grid Background="White">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Make a choice" FontSize="17" Margin="10"/>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="True"
+                    Command="{Binding CmdTrue}"
+                    Height="26"
+                    Width="100"
+                    Margin="10"/>
+                <Button Content="False"
+                    Command="{Binding CmdFalse}"
+                    Height="26"
+                    Width="100"
+                    Margin="10"/>
+            </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</UserControl>
